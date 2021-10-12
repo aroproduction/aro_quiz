@@ -1,0 +1,125 @@
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@500');
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 4vh;
+    background: linear-gradient(45deg, #ffff91, #a6ffc2);
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+    user-select: none;
+}
+#test{ 
+	border:#000 2px solid; 
+	padding:30px;
+	width:fit-content;
+	background:pink;
+	border-radius:10px;
+    text-align: center;
+}
+#test h3{
+    margin-bottom: 15px;
+}
+.btn{
+	border-radius:10px;
+	color:yellow;
+	background-color:red;
+	font-size:26px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+	border:2px solid;
+	padding:2px;
+    margin: 0 5px;
+}
+#hola, #hola1{
+    animation:heading_anim 1s linear infinite alternate;
+    font-family: 'Comfortaa', cursive;
+    font-size: 42px;
+}
+@keyframes heading_anim{
+    from{
+        color:red;
+    }
+    to{
+        color:blue;
+    }
+}
+.aro{
+    color:blue;
+    font-size:35px;
+    font-family:Constantia;
+}
+#test_status{
+    color:green;
+    font-size:45px;
+    font-family:Times New Roman;
+}
+.mario{
+    color:red;
+    font-size:28px;
+    margin-bottom: 20px;
+}
+.dj{
+    font-size:45px;
+    color:red;
+}
+.thunder{
+    color:purple;
+    font-size:20px;
+}
+.radiocontainer{
+	display: inline-block;
+	position:relative;
+	cursor: pointer;
+	color:blue;
+	font-size:24px;	
+	user-select: none;
+	padding-left: 30px;
+    padding-bottom: 5px;
+}
+.radiocontainer input {
+	display:none;
+}
+.radiocontainer .circle {
+	display: inline-block;
+	width: 18px;
+	height:18px;
+	background-color: white;
+	position:absolute;
+	left:0;
+	top:0;
+	border-radius: 50%;
+	border:2px solid #000;
+}
+
+.radiocontainer input:checked + .circle{
+	background-color: #2196fc;
+	border:1.5px solid black;
+}
+.radiocontainer input:checked + .circle:after{
+	content: "";
+	height:10px;
+	width:10px;
+	background-color:white;
+	position:absolute;
+	border-radius: 50%;
+	left:50%;
+	top:50%;
+	transform: translate(-50%,-50%);
+}
+
+@media screen and (max-width:500px){
+    #hola, #hola1{font-size: 28px;text-align: center;}
+    .aro{font-size: 25px; text-align: center;}
+    #test_status{font-size: 30px;}
+    .mario{font-size: 23px;}
+    #test{padding: 20px 0;}
+    .radiocontainer{font-size: 21px;}
+    .btn{font-size: 22px;}
+    .dj{font-size: 26px;}
+    .thunder{font-size: 18px;}
+}
