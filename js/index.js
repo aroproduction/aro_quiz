@@ -49,6 +49,6 @@ function checkAnswer(){
 }
 window.addEventListener("load", renderQuestion, false);
 function aritra(){
-	test.innerHTML = "<button class='btn' onclick='aritra()'>Tap here to view Correct Answers</button> <br><br> <font class='thunder'><b>1)"+questions[0][0]+" ---- Red<br>2)"+questions[1][0]+" ---- 3 Idiots<br>3)"+questions[2][0]+" ---- Tea<br>4)"+questions[3][0]+" ---- Forests<br>5) "+questions[4][0]+" ---- Computer</b></font>";
+	test.innerHTML = "<button class='btn'>-- Answers --</button> <br><br> <font class='thunder'><b>1)"+questions[0][0]+" ---- Red<br>2)"+questions[1][0]+" ---- 3 Idiots<br>3)"+questions[2][0]+" ---- Tea<br>4)"+questions[3][0]+" ---- Forests<br>5) "+questions[4][0]+" ---- Computer</b></font>";
 }
 document.addEventListener('contextmenu', event => event.preventDefault());
